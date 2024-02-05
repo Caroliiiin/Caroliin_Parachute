@@ -19,3 +19,8 @@ In addition, this script contains all 14 GTA Online parachute variations.
 
 The required items for the database are called
 parachute, parachute2, parachute3, ..., to parachute14
+
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+<p align="center">
+  <img align="center" src="https://i.postimg.cc/tRWs6wQ5/Bild-2024-02-06-002957831.png" title="Auf dem Weg zu deiner Mutter"> </p>
