@@ -2,7 +2,7 @@
 
 <img src="https://em-content.zobj.net/source/google/387/flag-germany_1f1e9-1f1ea.png" width="20" title="German"> Dieses Script fügt Fallschirme als benutzbares Item im Inventar hinzu.
 Bei Benutzung des Fallschirm-Items wird das Kleidungsstück vom Fallschirm angezogen, nach dem Öffnen im freien Fall verschwindet dieser wieder vom Rücken.
-Im Vergleich zu anderne Scripts benötigt man hier kein "Fallschirm-Auszieh-Item" sondern das Kleidungsstück verschwindet direkt vom Rücken wenn der Spieler im freien Fall den Fallschirm öffnet.
+Im Vergleich zu anderen Scripts benötigt man hier kein "Fallschirm-Auszieh-Item" sondern das Kleidungsstück verschwindet direkt vom Rücken wenn der Spieler im freien Fall den Fallschirm öffnet.
 
 Zuzüglich gibt es in diesem Script alle 14 GTA-Online Fallschirmvariationen.
 
