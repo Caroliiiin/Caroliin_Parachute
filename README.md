@@ -7,11 +7,7 @@ Im Vergleich zu anderen Scripts benötigt man hier kein "Fallschirm-Auszieh-Item
 Zuzüglich gibt es in diesem Script alle 14 GTA-Online Fallschirmvariationen.
 
 Die benötigten Items für die Datenbank heißen:
-parachute
-parachute2
-parachute3
-...
-bis parachute14
+parachute, parachute2, parachute3, ..., bis parachute14
 
 ___________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -22,8 +18,4 @@ In contrast to other scripts, you do not need a "parachute removal item" here, b
 In addition, this script contains all 14 GTA Online parachute variations.
 
 The required items for the database are called
-parachute
-parachute2
-parachute3
-...
-to parachute14
+parachute, parachute2, parachute3, ..., to parachute14
