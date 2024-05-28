@@ -24,20 +24,20 @@ local function giveParachute(tintIndex, model)
 end
 
 local parachuteEvents = {
-    { event = "GivePedWeapon", tintIndex = 0, model = nil },
-    { event = "GivePedWeapon2", tintIndex = 1, model = nil }, -- ROT
-    { event = "GivePedWeapon3", tintIndex = 2, model = nil }, -- SEASIDE
-    { event = "GivePedWeapon4", tintIndex = 3, model = nil },
-    { event = "GivePedWeapon5", tintIndex = 4, model = nil },
-    { event = "GivePedWeapon6", tintIndex = 5, model = nil },
-    { event = "GivePedWeapon7", tintIndex = 6, model = nil },
-    { event = "GivePedWeapon8", tintIndex = 7, model = nil },
-    { event = "GivePedWeapon9", tintIndex = 8, model = "pil_p_para_pilot_sp_s" },
-    { event = "GivePedWeapon10", tintIndex = 9, model = "pil_p_para_pilot_sp_s" },
-    { event = "GivePedWeapon11", tintIndex = 10, model = "pil_p_para_pilot_sp_s" },
-    { event = "GivePedWeapon12", tintIndex = 11, model = "pil_p_para_pilot_sp_s" },
-    { event = "GivePedWeapon13", tintIndex = 12, model = "pil_p_para_pilot_sp_s" },
-    { event = "GivePedWeapon14", tintIndex = 13, model = "pil_p_para_pilot_sp_s" },
+    { event = "GivePedWeapon", tintIndex = 0, model = nil }, -- Rainbow
+    { event = "GivePedWeapon2", tintIndex = 1, model = nil }, -- Red
+    { event = "GivePedWeapon3", tintIndex = 2, model = nil }, -- Seaside
+    { event = "GivePedWeapon4", tintIndex = 3, model = nil },-- Widowmaker
+    { event = "GivePedWeapon5", tintIndex = 4, model = nil },--  Patriot
+    { event = "GivePedWeapon6", tintIndex = 5, model = nil },-- Blue
+    { event = "GivePedWeapon7", tintIndex = 6, model = nil },--  Black
+    { event = "GivePedWeapon8", tintIndex = 7, model = nil },-- Hornet
+    { event = "GivePedWeapon9", tintIndex = 8, model = "pil_p_para_pilot_sp_s" },-- Air Force
+    { event = "GivePedWeapon10", tintIndex = 9, model = "pil_p_para_pilot_sp_s" },-- Desert 
+    { event = "GivePedWeapon11", tintIndex = 10, model = "pil_p_para_pilot_sp_s" },-- Shadow
+    { event = "GivePedWeapon12", tintIndex = 11, model = "pil_p_para_pilot_sp_s" },-- High Altitude
+    { event = "GivePedWeapon13", tintIndex = 12, model = "pil_p_para_pilot_sp_s" },-- Airborne
+    { event = "GivePedWeapon14", tintIndex = 13, model = "pil_p_para_pilot_sp_s" },-- Sunrise
 }
 
 for _, parachuteEvent in ipairs(parachuteEvents) do
@@ -47,14 +47,14 @@ for _, parachuteEvent in ipairs(parachuteEvents) do
     end)
 end
 
--- Event zum Zurücksetzen der Ped-Komponentenvariation, wenn die Fallschirm-Deploy-Taste gedrückt wird
+-- Event to reset the SetPedComponentVariation
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if parachuteEquipped then
             local playerPed = GetPlayerPed(-1)
             local speed = GetEntitySpeed(playerPed)
-            if speed > 10.0 then -- Du kannst diesen Wert anpassen, um die Skydiving-Geschwindigkeit festzulegen
+            if speed > 10.0 then -- Skydiving-Speed
                 if IsControlJustReleased(0, 144) then
                     local ped = GetPlayerPed(PlayerId())
                     SetPedComponentVariation(ped, 5, 0, 0, 0)
@@ -65,7 +65,7 @@ Citizen.CreateThread(function()
     end
 end)
 
--- Event zum Entfernen des Fallschirms (bleibt gleich)
+-- Event to remove the weapon "parachute"
 RegisterNetEvent("RemovePedWeapon")
 AddEventHandler("RemovePedWeapon", function()
     local weapon = GetHashKey("GADGET_PARACHUTE")
