@@ -23,4 +23,4 @@ parachute, parachute2, parachute3, ..., to parachute14
 ___________________________________________________________________________________________________________________________________________________________________________________________________
 
 <p align="center">
-  <img align="center" src="https://i.postimg.cc/tRWs6wQ5/Bild-2024-02-06-002957831.png" title="Auf dem Weg zu deiner Mutter"> </p>
+  <img align="center" src="https://github.com/Caroliiiin/Caroliin_Parachute/blob/main/caroliin_parachute/imgs/github_cover.png" title="Auf dem Weg zu deiner Mutter"> </p>
